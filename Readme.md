@@ -1,9 +1,9 @@
-Ejemplos del curso
+# Ejemplos del curso
 
-Clase 1:
-LoginPage
-LoginPageViaCodigo
+## Clase 1:
+- LoginPage
+- LoginPageViaCodigo
 
-Clase 2:
-ListadoNumeros
-PiedraPapelTijera
+## Clase 2:
+- ListadoNumeros
+- PiedraPapelTijera
