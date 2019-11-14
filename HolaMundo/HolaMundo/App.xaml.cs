@@ -10,7 +10,7 @@ namespace HolaMundo
         {
             InitializeComponent();
 
-            MainPage = new LoginViaCodigo();
+            MainPage = new PiedraPapelTijera();
         }
 
         protected override void OnStart()
