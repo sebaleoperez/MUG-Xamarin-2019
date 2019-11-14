@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HolaMundo.PiedraPapelTijera">
+
+    <StackLayout>
+        <Button Text="Piedra" Clicked="Eleccion" />
+        <Button Text="Papel" Clicked="Eleccion" />
+        <Button Text="Tijera" Clicked="Eleccion" />
+        <Label Text="Lo que eligió la computadora es:" />
+        <Label x:Name="labelEleccionComputadora" />
+        <Label Text="Mis Puntos:" />
+        <Label Text="0" x:Name="labelMisPuntos" />
+        <Label Text="Puntos de la Computadora:" />
+        <Label Text="0" x:Name="labelPuntosComputadora" />
+    </StackLayout>
+
+</ContentPage>
