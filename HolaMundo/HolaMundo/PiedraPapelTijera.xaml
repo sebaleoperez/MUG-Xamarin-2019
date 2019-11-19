@@ -4,15 +4,23 @@
              x:Class="HolaMundo.PiedraPapelTijera">
 
     <StackLayout>
-        <Button Text="Piedra" Clicked="Eleccion" />
-        <Button Text="Papel" Clicked="Eleccion" />
-        <Button Text="Tijera" Clicked="Eleccion" />
-        <Label Text="Lo que eligió la computadora es:" />
-        <Label x:Name="labelEleccionComputadora" />
-        <Label Text="Mis Puntos:" />
-        <Label Text="0" x:Name="labelMisPuntos" />
-        <Label Text="Puntos de la Computadora:" />
-        <Label Text="0" x:Name="labelPuntosComputadora" />
+        <StackLayout BackgroundColor="Yellow" VerticalOptions="Start">
+            <Button Text="Piedra" Clicked="Eleccion" />
+            <Button Text="Papel" Clicked="Eleccion" />
+            <Button Text="Tijera" Clicked="Eleccion" />
+        </StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand">
+
+        </StackLayout>
+        <StackLayout Margin="10" BackgroundColor="Gray"
+                     VerticalOptions="End">
+            <Label Text="Lo que eligió la computadora es:" />
+            <Label x:Name="labelEleccionComputadora" />
+            <Label Text="Mis Puntos:" />
+            <Label Text="0" x:Name="labelMisPuntos" />
+            <Label Text="Puntos de la Computadora:" />
+            <Label Text="0" x:Name="labelPuntosComputadora" />
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

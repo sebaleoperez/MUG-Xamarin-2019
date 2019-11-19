@@ -10,7 +10,7 @@ namespace HolaMundo
         {
             InitializeComponent();
 
-            MainPage = new PiedraPapelTijera();
+            MainPage = new PaginaConTabs();
         }
 
         protected override void OnStart()
