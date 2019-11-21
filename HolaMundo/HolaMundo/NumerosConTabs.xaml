@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HolaMundo.NumerosConTabs">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="1">
+           <Label Text="1" FontSize="250" HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="CenterAndExpand"/>
+    </ContentPage>
+    <ContentPage Title="2">
+        <Label Text="2" FontSize="250" HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="CenterAndExpand"/>
+    </ContentPage>
+    <ContentPage Title="3">
+        <Label Text="3" FontSize="250" HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="CenterAndExpand"/>
+    </ContentPage>
+    <ContentPage Title="4">
+        <Label Text="4" FontSize="250" HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="CenterAndExpand"/>
+    </ContentPage>
+</TabbedPage>
