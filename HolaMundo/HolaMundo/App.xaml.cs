@@ -1,5 +1,6 @@
 ﻿using System;
 using HolaMundo.Menu;
+using HolaMundo.Views;
 using HolaMundo.Views.ListView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -25,7 +26,7 @@ namespace HolaMundo
             MainPage = MenuPrincipal;
             */
 
-            MainPage = new NavigationPage(new EjemploListView());
+            MainPage = new NavigationPage(new ListadoPersonajes());
         }
 
         protected override void OnStart()

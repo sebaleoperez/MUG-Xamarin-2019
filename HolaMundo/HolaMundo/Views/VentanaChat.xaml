@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:selector="clr-namespace:HolaMundo.Selector"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HolaMundo.Views.VentanaChat">
+
+    <ContentPage.Resources>
+
+        <DataTemplate x:Key="templateEntrante">
+            <ViewCell>
+                <Label TextColor="Green" Text="{Binding Contenido}" HorizontalOptions="Start" />
+            </ViewCell>
+        </DataTemplate>
+
+        <DataTemplate x:Key="templateSaliente">
+            <ViewCell>
+                <Label TextColor="Black" Text="{Binding Contenido}" HorizontalOptions="End" />
+            </ViewCell>
+        </DataTemplate>
+
+        <selector:ChatTemplateSelector x:Key="miSelector"
+                    EntranteTemplate="{StaticResource templateEntrante}"
+                    SalienteTemplate="{StaticResource templateSaliente}" />
+    </ContentPage.Resources>
+
+
+    <ContentPage.Content>
+
+        <ListView x:Name="ListadoMensajes" HasUnevenRows="True" ItemTemplate="{StaticResource miSelector}"/>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:selector="clr-namespace:HolaMundo.Selector"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HolaMundo.Views.ListView.EjemploConSelector">
+
+    <ContentPage.Resources> 
+        <ResourceDictionary>
+            <DataTemplate x:Key="miTemplateParaArquero">
+                <ViewCell>
+                    <StackLayout BackgroundColor="Green">
+                        <Label Text="{Binding Nombre}" />
+                        <Label Text="ARQUERO" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+
+            <DataTemplate x:Key="miTemplateParaDelantero">
+                <ViewCell>
+                    <StackLayout BackgroundColor="Black">
+                        <Label Text="{Binding Nombre}" TextColor="White" />
+                        <Label Text="DELANTERO" TextColor="White"  />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+
+            <selector:JugadorSelector x:Key="miJugadorSelector"
+                                      ArqueroTemplate="{StaticResource miTemplateParaArquero}"
+                                      DelanteroTemplate="{StaticResource miTemplateParaDelantero}"/>
+        </ResourceDictionary> 
+    </ContentPage.Resources> 
+
+    <ContentPage.Content>
+
+        <ListView x:Name="ListViewPrincipal" ItemTapped="ClickearElemento"
+                  HasUnevenRows="True" ItemTemplate="{StaticResource miJugadorSelector}">
+        </ListView>
+
+    </ContentPage.Content>
+</ContentPage>

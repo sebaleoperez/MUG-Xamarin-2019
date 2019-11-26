@@ -2,13 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HolaMundo.Views.ListView.EjemploListView">
     <ContentPage.Content>
 
-        <ListView x:Name="ListViewPrincipal" ItemTapped="ClickearElemento">
+        <ListView x:Name="ListViewPrincipal" ItemTapped="ClickearElemento"
+                  HasUnevenRows="True">
             <ListView.ItemTemplate> 
                 <DataTemplate>
-                    <ImageCell DetailColor="Gray" ImageSource="gato.jpg" Text="{Binding Nombre}" Detail="{Binding Apellido}"/>
+                    <ViewCell>
+                        <!--Grid>
+                            <Image Source="{Binding Url}" Grid.Row="0" Grid.Column="1"
+                                   Grid.RowSpan="2"
+                                   Aspect="AspectFit" HeightRequest="50" />
+                            <Label Text="{Binding Nombre}" Grid.Row="0" Grid.Column="0" />
+                            <Label Text="{Binding Posicion}" Grid.Row="1" Grid.Column="0" />
+                        </-->
+
+                        <StackLayout Orientation="Horizontal">
+
+                            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Nombre}" />
+                                <Label Text="{Binding Posicion}" />
+                            </StackLayout>
+
+                            <Image Source="gato.jpg"
+                                   Grid.RowSpan="2"
+                                   Aspect="AspectFit" HeightRequest="50" />
+
+                        </StackLayout>
+
+                    </ViewCell>
                  </DataTemplate> 
                 </ListView.ItemTemplate>
-                </ListView>
+        </ListView>
 
     </ContentPage.Content>
 </ContentPage>

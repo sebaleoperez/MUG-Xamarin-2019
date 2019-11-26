@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace HolaMundo.Views.ListView
 {
-    public partial class EjemploListView : ContentPage
+    public partial class EjemploConSelector : ContentPage
     {
-        public EjemploListView()
+        public EjemploConSelector()
         {
             InitializeComponent();
 
@@ -23,7 +23,7 @@ namespace HolaMundo.Views.ListView
 
             Jugador otroJugadorMas = new Jugador();
             otroJugadorMas.Nombre = "Pipita Higuain";
-            otroJugadorMas.Posicion = "Delantero";
+            otroJugadorMas.Posicion = "Arquero";
             otroJugadorMas.Url = "gato.jpg";
 
             ObservableCollection<Jugador> listado = new ObservableCollection<Jugador>();
@@ -32,7 +32,6 @@ namespace HolaMundo.Views.ListView
             listado.Add(otroJugadorMas);
 
             ListViewPrincipal.ItemsSource = listado;
-
         }
 
         public void ClickearElemento(object sender, ItemTappedEventArgs args)
@@ -40,12 +39,5 @@ namespace HolaMundo.Views.ListView
             Navigation.PushAsync(new MostradorGigante(args.Item.ToString()));
 
         }
-    }
-
-    public class Jugador
-    {
-        public string Nombre { get; set;  }
-        public string Posicion { get; set; }
-        public string Url { get; set; }
     }
 }
