@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HolaMundo.Prueba">
+    <ContentPage.Resources> 
+<Style x:Key="nombre" TargetType="Label"> 
+<Setter Property="TextColor" Value="Blue"></Setter> 
+</Style> 
+<Style x:Key="diametro" TargetType="Label"> 
+<Setter Property="TextColor" Value="Green"></Setter> 
+</Style> 
+</ContentPage.Resources> 
+<ContentPage.Content> 
+<StackLayout> 
+<Label x:Name="nombrePlaneta" Text="probar"></Label> 
+<Label x:Name="diametroPlaneta" Text="probar"></Label> 
+</StackLayout> 
+</ContentPage.Content> 
+</ContentPage>

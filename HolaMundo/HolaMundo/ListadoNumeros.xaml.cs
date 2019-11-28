@@ -14,6 +14,9 @@ namespace HolaMundo
 
         public void CrearLabels(object sender, EventArgs args)
         {
+
+            this.Resources["ColorDeLetra"] = Color.Green;
+
             StackLayoutListadoNumeros.Children.Clear();
 
             int cantidad = 0;
