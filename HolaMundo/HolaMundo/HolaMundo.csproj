@@ -18,5 +18,7 @@
     <Folder Include="Selector\" />
     <Folder Include="Services\" />
     <Folder Include="Recursos\" />
+    <Folder Include="Controls\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

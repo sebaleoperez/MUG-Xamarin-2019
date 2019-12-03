@@ -26,7 +26,7 @@ namespace HolaMundo
             MainPage = MenuPrincipal;
             */
 
-            MainPage = new NavigationPage(new Prueba());
+            MainPage = new NavigationPage(new EjemploMVVM());
         }
 
         protected override void OnStart()
