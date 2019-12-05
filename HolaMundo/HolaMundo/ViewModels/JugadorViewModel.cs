@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace HolaMundo.ViewModels
 {
-    public class JugadorViewModel : INotifyPropertyChanged
+    public class JugadorViewModel : BaseViewModel
     {
         public ObservableCollection<Jugador> Jugadores { get; set; }
         public string Filtro { get; set; }
@@ -27,8 +27,6 @@ namespace HolaMundo.ViewModels
                 OnPropertyChanged("IsBusy");
             }
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public JugadorViewModel()
         {
@@ -68,10 +66,6 @@ namespace HolaMundo.ViewModels
             });
 
             IsBusy = false;
-        }
-
-        protected void OnPropertyChanged(string propertyName) {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         public void Guardar()

@@ -20,5 +20,7 @@
     <Folder Include="Recursos\" />
     <Folder Include="Controls\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Models\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 </Project>
