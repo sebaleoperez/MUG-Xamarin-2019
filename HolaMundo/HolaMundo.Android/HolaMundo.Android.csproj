@@ -68,6 +68,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\ShadowedLabelRenderer.cs" />
     <Compile Include="Implementations\TextToSpeech.cs" />
+    <Compile Include="Implementations\DeviceOrientationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

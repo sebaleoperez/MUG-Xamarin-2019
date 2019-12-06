@@ -26,7 +26,7 @@ namespace HolaMundo
             MainPage = MenuPrincipal;
             */
 
-            MainPage = new NavigationPage(new LoginConMVVM());
+            MainPage = new NavigationPage(new DeviceOrientation());
         }
 
         protected override void OnStart()
